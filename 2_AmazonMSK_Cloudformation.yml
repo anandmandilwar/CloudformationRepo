@@ -14,11 +14,6 @@ Parameters:
     Type: String
     Default: "ResourceForMSKDemo"
 
-  #EnvironmentName:
-  #  Description: An environment name that is prefixed to resource names
-  #  Type: String
-  #  Default: "Demo"
-  
   VpcId:
     Description: The ID of the VPC for security group
     Type: String
@@ -160,6 +155,3 @@ Outputs:
   MSKClusterArn:
     Description: ARN of created MSK cluster
     Value: !Ref MSKCluster
-  #MSKSecurityGroup:
-  #  Description: Security group for clients to connect to the cluster
-  #  Value: !Ref MSKSecurityGroup
